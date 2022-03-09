@@ -25,16 +25,15 @@ public class InventoryDbContext : DbContext
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
     {
-        int result = 0;
         var entries = ChangeTracker.Entries<Entity>();
         
         foreach (var entry in entries)
         {
             await _domainEventDispatcher.DispatchAsync(entry.Entity.GetEvents().ToArray());
             
-            result = await base.SaveChangesAsync();
+            entry.Entity.ClearEvents();
         }
 
-        return result;
+        return await base.SaveChangesAsync();
     }
 }
