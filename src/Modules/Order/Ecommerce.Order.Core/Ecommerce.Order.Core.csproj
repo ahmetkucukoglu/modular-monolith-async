@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\Ecommerce.Shared.Abstractions\Ecommerce.Shared.Abstractions.csproj" />
+      <ProjectReference Include="..\..\Inventory\Ecommerce.Inventory.Shared\Ecommerce.Inventory.Shared.csproj" />
+      <ProjectReference Include="..\..\Payment\Ecommerce.Payment.Shared\Ecommerce.Payment.Shared.csproj" />
+      <ProjectReference Include="..\Ecommerce.Order.Shared\Ecommerce.Order.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

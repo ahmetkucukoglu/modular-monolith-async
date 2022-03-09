@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Ecommerce.Shared.Abstractions\Ecommerce.Shared.Abstractions.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="7.3.1"/>
+        <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1"/>
+        <PackageReference Include="MassTransit.EntityFrameworkCore" Version="7.3.1"/>
+        <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1"/>
+    </ItemGroup>
+
+</Project>

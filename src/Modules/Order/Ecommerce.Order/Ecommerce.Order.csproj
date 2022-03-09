@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\Ecommerce.Shared\Ecommerce.Shared.csproj" />
+      <ProjectReference Include="..\Ecommerce.Order.Core\Ecommerce.Order.Core.csproj" />
+      <ProjectReference Include="..\Ecommerce.Order.Infrastructure\Ecommerce.Order.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+</Project>
